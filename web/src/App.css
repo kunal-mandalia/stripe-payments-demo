@@ -1,0 +1,100 @@
+.nav {
+  display: block;
+  /* background-color: black; */
+}
+.nav > ul > li {
+  display: inline-block;
+  padding:  10px 20px;
+}
+.nav > ul > li > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+}
+#impersonate-user {
+  float: right;
+}
+@media only screen and (max-width: 600px) {
+  .nav > ul > li {
+    display: block;
+  }
+  #impersonate-user {
+    float: none;
+  }
+}
+
+
+.layout {
+  color: white;
+  background-color: #333;
+  width: 100vw;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-input {
+  width: calc(100% - 25px);
+  padding: 5px 10px;
+  font-size: large;
+  background-color: #333;
+  color: rgb(225, 225, 225);
+  margin: 10px 0px;
+  height: 30px;
+  border: solid 2px #a5a5a5;
+}
+.text-input::placeholder {
+  color: rgb(177, 177, 177);
+}
+
+.checkout-description a {
+  color: white;
+}
+
+button {
+  font-size: large;
+  padding: 10px 15px;
+  margin: 20px 0;
+}
+
+.success {
+  color: white;
+  background-color: rgb(0, 117, 0);
+}
+
+.error {
+  color: white;
+  background-color: rgb(128, 0, 0);
+}
+
+select {
+  font-size: large;
+}
+
+.busy {
+  opacity: 0.75;
+}
+
+.paymentmethod {
+  border: solid 2px #a5a5a5;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.paymentmethod > .description {
+  font-size: medium;
+  text-transform: uppercase;
+}
+.paymentmethod > .description > .expiry {
+  font-size: small;
+  text-transform: lowercase;
+}
+.paymentmethod > .actions > button {
+  font-size: medium;
+  padding: 4px 8px;
+  margin: 0 1px;
+}
