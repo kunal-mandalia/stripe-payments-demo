@@ -1,5 +1,8 @@
 # stripe-payments-demo
 
+## Demo
+![App demo](/stripe-payments-demo.gif)
+
 ## Run locally
 ###  web
 1. Configure environment variables in `./web/src/config.ts`
